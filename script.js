@@ -20,7 +20,7 @@ function palindrome(str){
 }
 
 // take input
-const string = prompt('Enter a string: ');
+// const string = prompt('Enter a string: ');
 
 // call the function
 // const value = checkPalindrome(string);
