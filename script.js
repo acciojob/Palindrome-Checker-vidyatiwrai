@@ -1,7 +1,7 @@
 // complete the given function
 
 function palindrome(str){
-    s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+    s = str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
 
         int left = 0;
         int right = s.length() - 1;
