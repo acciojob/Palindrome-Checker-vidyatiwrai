@@ -1,18 +1,20 @@
 // complete the given function
 
 function palindrome(str){
+    s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
 
-    const len = str.length();
+        int left = 0;
+        int right = s.length() - 1;
 
-    for (let i = 0; i < len / 2; i++) {
-
-        if (str[i] !== str[len - 1 - i]) {
-            return 'false';
+        while (left < right) {
+            if (s.charAt(left) != s.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
         }
+
+        return true;
     }
-    return 'true';
-}
-
-
 
 module.exports = palindrome
